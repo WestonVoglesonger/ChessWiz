@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --border: 214.3 31.8% 91.4%;
+  }
+}
+
+@layer utilities {
+  .bg-background {
+    background-color: hsl(var(--background));
+  }
+  .border-border {
+    border-color: hsl(var(--border));
+  }
+}
+
+
+/* Custom styles for chess board */
+chess-board {
+  --board-border-radius: 0.5rem;
+  --square-light-color: #f0d9b5;
+  --square-dark-color: #b58863;
+}

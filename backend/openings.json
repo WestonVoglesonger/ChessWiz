@@ -1,0 +1,1099 @@
+{
+  "Openings": [
+    {
+      "id": 1,
+      "openingName": "Sicilian Defense",
+      "ecoCode": "B20",
+      "description": "The Sicilian Defense is one of the most popular and best-scoring responses to White's first move 1.e4. It asymmetrically challenges White's control of the center, leading to rich and diverse positions.",
+      "strategicIdeas": "Black aims to counterattack on the queenside while White typically focuses on the kingside. The imbalance creates dynamic play and numerous tactical opportunities.",
+      "famousGames": [
+        {
+          "game": "Fischer vs. Spassky, 1972",
+          "year": 1972,
+          "event": "World Chess Championship",
+          "moves": "1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 a6"
+        }
+      ],
+      "variations": [
+        {
+          "variationName": "Najdorf Variation",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "a6"],
+          "description": "Introduced by Miguel Najdorf, this variation is one of the most respected and deeply analyzed lines in the Sicilian Defense.",
+          "strategicIdeas": "Black's move ...a6 prevents White's Nb5 and prepares ...e5 or ...b5, aiming for queenside expansion.",
+          "famousGames": [
+            {
+              "game": "Kasparov vs. Topalov, 1999",
+              "year": 1999,
+              "event": "Wijk aan Zee",
+              "moves": "1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 a6 6.Bg5 e6 7.f4 Qc7 8.Qf3 Nbd7 9.O-O-O b5 10.e5 dxe5 11.fxe5 Nxe5 12.Qh3 Bb7"
+            }
+          ]
+        },
+        {
+          "variationName": "Dragon Variation",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "g6"],
+          "description": "Characterized by Black's fianchetto of the bishop to g7, the Dragon Variation leads to sharp and tactical positions.",
+          "strategicIdeas": "Black controls the long diagonal and prepares for central and queenside counterplay, while White often initiates a kingside attack.",
+          "famousGames": [
+            {
+              "game": "Kasparov vs. Topalov, 1999",
+              "year": 1999,
+              "event": "Wijk aan Zee",
+              "moves": "1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 g6 6.Be3 Bg7 7.f3 Nc6 8.Qd2 O-O 9.O-O-O Bd7 10.h4 Rc8 11.Bh6"
+            }
+          ]
+        },
+        {
+          "variationName": "Scheveningen Variation",
+          "moves": ["e4", "c5", "Nf3", "d6", "d4", "cxd4", "Nxd4", "Nf6", "Nc3", "e6"],
+          "description": "A solid and flexible setup where Black adopts a pawn structure with pawns on d6 and e6, providing a strong center and king safety.",
+          "strategicIdeas": "Black aims for a solid defense while being ready to counterattack based on White's setup. The flexible pawn structure allows Black to choose different plans.",
+          "famousGames": [
+            {
+              "game": "Kramnik vs. Topalov, 2006",
+              "year": 2006,
+              "event": "World Chess Championship",
+              "moves": "1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 e6 6.Be3 a6 7.f3 Be7 8.Qd2 O-O 9.O-O-O b5 10.Bh6"
+            }
+          ]
+        },
+        {
+          "variationName": "Accelerated Dragon",
+          "moves": ["e4", "c5", "Nf3", "Nc6", "d4", "cxd4", "Nxd4", "g6"],
+          "description": "A faster version of the Dragon Variation where Black omits ...d6 in favor of quicker development and control of the center.",
+          "strategicIdeas": "Black aims to achieve similar positions to the Dragon without committing to ...d6, potentially saving a tempo and preparing for faster counterplay.",
+          "famousGames": [
+            {
+              "game": "Kramnik vs. Topalov, 2006",
+              "year": 2006,
+              "event": "World Chess Championship",
+              "moves": "1.e4 c5 2.Nf3 Nc6 3.d4 cxd4 4.Nxd4 g6 5.Nc3 Bg7 6.Be3 Nf6 7.Qd2 O-O 8.O-O-O d6 9.f3 Bd7 10.Kb1 Rc8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "openingName": "Ruy Lopez",
+      "ecoCode": "C60",
+      "description": "The Ruy Lopez is a classical chess opening named after the Spanish bishop Ruy López de Segura. It focuses on controlling the center and developing pieces efficiently.",
+      "strategicIdeas": "White aims to undermine Black's control of the center, particularly targeting the e5 pawn. Black seeks solid development and counterplay on the queenside.",
+      "famousGames": [
+        {
+          "game": "Fischer vs. Spassky, 1972",
+          "year": 1972,
+          "event": "World Chess Championship",
+          "moves": "1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 d6 8.c3 O-O 9.h3 Nb8 10.d4 Nbd7"
+        }
+      ],
+      "variations": [
+        {
+          "variationName": "Main Line",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5"],
+          "description": "The most traditional and extensively studied line of the Ruy Lopez, focusing on solid development and control of the center.",
+          "strategicIdeas": "White develops the bishop to exert pressure on the knight at c6, indirectly attacking the e5 pawn. Black has various plans including defending the e5 pawn or challenging White's setup.",
+          "famousGames": [
+            {
+              "game": "Karpov vs. Kasparov, 1985",
+              "year": 1985,
+              "event": "World Chess Championship",
+              "moves": "1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 d6 8.c3 O-O 9.h3 Nb8 10.d4 Nbd7 11.Nbd2 c5 12.d5 Nb6 13.Bc2 Re8 14.Nf1 Bf8 15.Ne3 exd5 16.exd5"
+            }
+          ]
+        },
+        {
+          "variationName": "Exchange Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Bxc6"],
+          "description": "A straightforward variation where White exchanges the bishop for the knight on c6, leading to a doubled pawn structure for Black.",
+          "strategicIdeas": "White aims to eliminate Black's knight to disrupt Black's pawn structure and control of the center. Black seeks compensation through the open b-file and bishop pair.",
+          "famousGames": [
+            {
+              "game": "Fischer vs. Reshevsky, 1961",
+              "year": 1961,
+              "event": "US Championship",
+              "moves": "1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Bxc6 dxc6 5.d4 exd4 6.Qxd4 Qd6 7.Qxd6 cxd6 8.c3 Nf6 9.Bc4 Be6 10.Bb3 O-O 11.O-O Re8 12.Rad1 Bc5"
+            }
+          ]
+        },
+        {
+          "variationName": "Closed Variation",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "a6", "Ba4", "Nf6", "O-O", "Be7"],
+          "description": "A solid and flexible variation where Black develops naturally while maintaining strong central control.",
+          "strategicIdeas": "White continues with typical development, possibly preparing d4. Black aims for a strong and resilient position, ready to counter in the center or on the queenside.",
+          "famousGames": [
+            {
+              "game": "Kramnik vs. Topalov, 2006",
+              "year": 2006,
+              "event": "World Chess Championship",
+              "moves": "1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 d6 8.c3 O-O 9.h3 Nb8 10.d4 Nbd7 11.Nbd2 Bb7 12.Bc2 Re8 13.Nf1 Bf8 14.Ng3 g6 15.d5 c6"
+            }
+          ]
+        },
+        {
+          "variationName": "Berlin Defense",
+          "moves": ["e4", "e5", "Nf3", "Nc6", "Bb5", "Nf6"],
+          "description": "Also known as the 'Berlin Wall', this defense is renowned for its solidity and has been famously used by Vladimir Kramnik to neutralize Garry Kasparov in the 2000 World Championship.",
+          "strategicIdeas": "Black aims for a solid and resilient structure, often leading to simplified positions and reduced tactical complexities. This defense emphasizes piece activity and king safety.",
+          "famousGames": [
+            {
+              "game": "Kramnik vs. Kasparov, 2000",
+              "year": 2000,
+              "event": "World Chess Championship",
+              "moves": "1.e4 e5 2.Nf3 Nc6 3.Bb5 Nf6 4.O-O Nxe4 5.Re1 Nd6 6.Bxc6 dxc6 7.d4 exd4 8.Qxd4 Qe7 9.Qxe7+ Kxe7"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "openingName": "French Defense",
+      "ecoCode": "C00",
+      "description": "The French Defense is a solid and resilient response to 1.e4, characterized by the pawn structure that arises after 1.e4 e6. It aims to counterattack the center while maintaining a strong defensive setup.",
+      "strategicIdeas": "Black supports the d5 pawn, prepares to challenge White's center, and often engages in counterplay on the queenside or in the center. White typically gains space in the center and may initiate kingside attacks.",
+      "famousGames": [
+        {
+          "game": "Anatoly Karpov vs. Viktor Korchnoi, 1978",
+          "year": 1978,
+          "event": "World Chess Championship",
+          "moves": "1.e4 e6 2.d4 d5 3.Nc3 Bb4 4.e5 c5 5.a3 Bxc3+ 6.bxc3 Ne7 7.Qg4 Nf5 8.Qxg7 Rg8 9.Qh6 cxd4 10.cxd4"
+        }
+      ],
+      "variations": [
+        {
+          "variationName": "Advance Variation",
+          "moves": ["e4", "e6", "d4", "d5", "e5"],
+          "description": "A popular line where White immediately gains space in the center by advancing the e-pawn to e5.",
+          "strategicIdeas": "White establishes a strong pawn center, while Black seeks counterplay by undermining the d4 pawn and striking at White's center with moves like ...c5 and ...f6.",
+          "famousGames": [
+            {
+              "game": "Fischer vs. Petrosian, 1971",
+              "year": 1971,
+              "event": "Candidates Tournament",
+              "moves": "1.e4 e6 2.d4 d5 3.e5 c5 4.c3 Nc6 5.Nf3 Qb6 6.Be2 cxd4 7.cxd4 Bd7 8.Nc3 Nge7 9.O-O Qxb2 10.Rb1 Qxa2 11.Bf4 Qc4"
+            }
+          ]
+        },
+        {
+          "variationName": "Winawer Variation",
+          "moves": ["e4", "e6", "d4", "d5", "Nc3", "Bb4"],
+          "description": "A sharp and tactical variation where Black pins the knight on c3 with the bishop, creating unbalanced pawn structures.",
+          "strategicIdeas": "Black seeks dynamic counterplay by putting pressure on the knight and potentially doubling White's pawns on the c-file. White aims to maintain a strong center and exploit the weaknesses in Black's pawn structure.",
+          "famousGames": [
+            {
+              "game": "Fischer vs. Byrne, 1956",
+              "year": 1956,
+              "event": "US Championship",
+              "moves": "1.e4 e6 2.d4 d5 3.Nc3 Bb4 4.e5 c5 5.a3 Bxc3+ 6.bxc3 Ne7 7.Qg4 Nf5 8.Qxg7 Rg8 9.Qh6 cxd4 10.cxd4"
+            }
+          ]
+        },
+        {
+          "variationName": "Tarrasch Variation",
+          "moves": ["e4", "e6", "d4", "d5", "Nd2"],
+          "description": "A flexible and strategic variation where White avoids the pin by playing Nd2 instead of Nc3.",
+          "strategicIdeas": "White aims for a solid pawn structure and flexible piece placement. Black seeks to challenge White's center with moves like ...c5 and ...Nc6.",
+          "famousGames": [
+            {
+              "game": "Kasparov vs. Karpov, 1985",
+              "year": 1985,
+              "event": "World Chess Championship",
+              "moves": "1.e4 e6 2.d4 d5 3.Nd2 dxe4 4.Nxe4 Nf6 5.Nxf6+ Qxf6 6.Nc3 c5 7.c3 Nc6 8.dxc5 Qxc5 9.Qd4 Qxd4 10.cxd4 Be7"
+            }
+          ]
+        },
+        {
+          "variationName": "Classical Variation",
+          "moves": ["e4", "e6", "d4", "d5", "Nc3", "Nf6"],
+          "description": "A solid and classical approach where Black develops the knight to f6, challenging White's control of the center.",
+          "strategicIdeas": "Black aims for a robust and flexible setup, preparing to strike at the center with ...c5 or ...Be7 followed by ...c5. White seeks to maintain a strong pawn center and develop pieces actively.",
+          "famousGames": [
+            {
+              "game": "Anatoly Karpov vs. Garry Kasparov, 1985",
+              "year": 1985,
+              "event": "World Chess Championship",
+              "moves": "1.e4 e6 2.d4 d5 3.Nc3 Nf6 4.Bg5 dxe4 5.Nxe4 Be7 6.Bxf6 Bxf6 7.Ng3 Qd6 8.Qe2 O-O 9.O-O-O Re8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "openingName": "Caro-Kann Defense",
+      "ecoCode": "B10",
+      "description": "The Caro-Kann Defense is a solid and resilient response to 1.e4, known for its sound pawn structure and excellent defensive resources.",
+      "strategicIdeas": "Black aims to build a strong and flexible pawn structure, often preparing to counterattack in the center or on the queenside. White typically seeks to gain space and initiate central and kingside operations.",
+      "famousGames": [
+        {
+          "game": "Spassky vs. Fischer, 1972",
+          "year": 1972,
+          "event": "World Chess Championship",
+          "moves": "1.e4 c6 2.d4 d5 3.Nc3 dxe4 4.Nxe4 Nf6 5.Nxf6+ exf6 6.Bd3 Bd6 7.O-O O-O 8.c3 c5 9.dxc5 Bxc5 10.Qe2 Nc6"
+        }
+      ],
+      "variations": [
+        {
+          "variationName": "Classical Variation",
+          "moves": ["e4", "c6", "d4", "d5", "Nc3", "dxe4", "Nxe4", "Nd7"],
+          "description": "A traditional line where Black develops the knight to d7 to support the e5 square and prepare for ...Ngf6.",
+          "strategicIdeas": "Black maintains a solid pawn structure while preparing to develop pieces harmoniously. White aims to exploit the central space advantage.",
+          "famousGames": [
+            {
+              "game": "Anatoly Karpov vs. Viktor Korchnoi, 1978",
+              "year": 1978,
+              "event": "World Chess Championship",
+              "moves": "1.e4 c6 2.d4 d5 3.Nc3 dxe4 4.Nxe4 Nd7 5.Nf3 Ngf6 6.Nxf6+ exf6 7.Bd3 Bd6 8.O-O O-O 9.c3 Re8 10.Re1 Qc7 11.Bg5 c5"
+            }
+          ]
+        },
+        {
+          "variationName": "Advance Variation",
+          "moves": ["e4", "c6", "d4", "d5", "e5"],
+          "description": "A popular line where White gains space in the center by advancing the e-pawn to e5, aiming to restrict Black's pieces.",
+          "strategicIdeas": "White establishes a strong pawn center, while Black seeks counterplay by undermining the d4 pawn and striking at White's center with moves like ...c5 and ...f6.",
+          "famousGames": [
+            {
+              "game": "Fischer vs. Petrosian, 1971",
+              "year": 1971,
+              "event": "Candidates Tournament",
+              "moves": "1.e4 c6 2.d4 d5 3.e5 Bf5 4.Nc3 e6 5.g4 Bg6 6.h4 h5 7.g5 Nd7 8.Bd3 Bg7 9.f4 Qc7 10.Nge2 Ne7 11.O-O Ng6 12.Bxg6 fxg6 13.f5 exf5 14.Rxf5"
+            }
+          ]
+        },
+        {
+          "variationName": "Panov-Botvinnik Attack",
+          "moves": ["e4", "c6", "d4", "d5", "exd5", "cxd5", "c4"],
+          "description": "An aggressive line where White strikes at Black's pawn center with c4, aiming to open lines and increase central control.",
+          "strategicIdeas": "White seeks to create a strong center and open lines for piece activity, while Black aims to counter White's central dominance and develop pieces harmoniously.",
+          "famousGames": [
+            {
+              "game": "Botvinnik vs. Tal, 1953",
+              "year": 1953,
+              "event": "Candidates Tournament",
+              "moves": "1.e4 c6 2.d4 d5 3.exd5 cxd5 4.c4 Nf6 5.Nc3 Nc6 6.Nf3 Bg4 7.Be2 e6 8.O-O Be7 9.h3 Bh5 10.g4 Bg6 11.Ne5 O-O 12.Be3 Rc8"
+            }
+          ]
+        },
+        {
+          "variationName": "Tartakower Variation",
+          "moves": ["e4", "c6", "d4", "d5", "Nc3", "dxe4", "Nxe4", "Nd7", "Ng5"],
+          "description": "A dynamic and flexible line where White's knight on g5 creates immediate threats, aiming to disrupt Black's coordination.",
+          "strategicIdeas": "White puts pressure on the f7 square and prepares for a kingside attack, while Black seeks to neutralize White's threats and consolidate the position.",
+          "famousGames": [
+            {
+              "game": "Tal vs. Larsen, 1961",
+              "year": 1961,
+              "event": "Candidates Tournament",
+              "moves": "1.e4 c6 2.d4 d5 3.Nc3 dxe4 4.Nxe4 Nd7 5.Ng5 Ngf6 6.Bd3 e6 7.O-O h6 8.Nf3 Bg4 9.h3 Bh5 10.Re1 Be7 11.c3 O-O 12.Nf3 Nb6 13.Bg5 c5 14.dxc5 Nxc5 15.Qf3 Rc8 16.Nd2 Rxc3 17.bxc3 Qa5 18.Nc4 Qc7 19.Nb3 Qc6 20.Nd4 Qd6 21.Qxd6 exd6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "openingName": "King's Indian Defense",
+      "ecoCode": "E60",
+      "description": "The King's Indian Defense is a hypermodern opening where Black allows White to occupy the center with pawns, aiming to undermine and attack it later.",
+      "strategicIdeas": "Black fianchettos the bishop to g7, controls key squares, and prepares for a counterattack on the queenside or in the center. White typically builds a strong pawn center and may initiate a kingside offensive.",
+      "famousGames": [
+        {
+          "game": "Kasparov vs. Karpov, 1985",
+          "year": 1985,
+          "event": "World Chess Championship",
+          "moves": "1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.Nf3 O-O 6.Be3 e5 7.d5 c6 8.c5 Nh5 9.Bc1 Nf4 10.Qd2 cxd5 11.cxd5 Nh5 12.Nd2 f5"
+        }
+      ],
+      "variations": [
+        {
+          "variationName": "Classical Variation",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "Bg7", "e4", "d6"],
+          "description": "A solid setup where Black prepares for a central and queenside counterattack while maintaining a strong pawn structure.",
+          "strategicIdeas": "Black develops pieces harmoniously, fianchettos the bishop for long-term pressure on the center, and seeks dynamic counterplay based on White's setup.",
+          "famousGames": [
+            {
+              "game": "Fischer vs. Spassky, 1972",
+              "year": 1972,
+              "event": "World Chess Championship",
+              "moves": "1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.Nf3 O-O 6.Be3 e5 7.d5 c6 8.c5 a6 9.a4 Nh5 10.Be2 f5"
+            }
+          ]
+        },
+        {
+          "variationName": "Fianchetto Variation",
+          "moves": ["d4", "Nf6", "c4", "g6", "g3", "Bg7", "Bg2", "d6"],
+          "description": "A solid and strategic variation where White fianchettos the bishop, aiming for a strong presence in the center and on the queenside.",
+          "strategicIdeas": "White focuses on controlling key squares and building a strong central structure, while Black seeks counterplay through moves like ...c5 and ...Nc6.",
+          "famousGames": [
+            {
+              "game": "Kramnik vs. Karpov, 2000",
+              "year": 2000,
+              "event": "World Chess Championship",
+              "moves": "1.d4 Nf6 2.c4 g6 3.g3 Bg7 4.Bg2 d6 5.Nf3 O-O 6.O-O e5 7.c5 Nbd7 8.Nc3 a6 9.a3 b6 10.b4 c5 11.dxc5 bxc5 12.Rb1 Qc7 13.Rxb8 Rxb8 14.e4 Qb6"
+            }
+          ]
+        },
+        {
+          "variationName": "Four Pawns Attack",
+          "moves": ["d4", "Nf6", "c4", "g6", "e4", "Bg7", "f4", "d6", "Nf3", "O-O", "Be2", "Nc6", "O-O"],
+          "description": "An aggressive setup where White pushes four central pawns to gain maximum space and prepare for a kingside assault.",
+          "strategicIdeas": "White aims to dominate the center and launch a direct attack on Black's kingside. Black seeks to undermine White's pawn center and counterattack when opportunities arise.",
+          "famousGames": [
+            {
+              "game": "Tal vs. Smyslov, 1959",
+              "year": 1959,
+              "event": "Candidates Tournament",
+              "moves": "1.d4 Nf6 2.c4 g6 3.e4 Bg7 4.f4 d6 5.Nf3 O-O 6.Be2 Nc6 7.O-O e5 8.d5 Ne7 9.Nc3 Ng8 10.Be3 Nh6 11.Bf3 f5 12.exf5 Bxf5 13.Nd4 Bd7 14.Nf3 Nh5"
+            }
+          ]
+        },
+        {
+          "variationName": "Saemisch Variation",
+          "moves": ["d4", "Nf6", "c4", "g6", "e4", "Bg7", "f3", "O-O", "Be3", "d6"],
+          "description": "A dynamic and flexible variation where White supports the e4 pawn and prepares for central expansion.",
+          "strategicIdeas": "White builds a strong pawn center and prepares to initiate a kingside attack, while Black aims to counter White's plans with moves like ...c5 and ...Nc6.",
+          "famousGames": [
+            {
+              "game": "Kramnik vs. Anand, 2008",
+              "year": 2008,
+              "event": "World Chess Championship",
+              "moves": "1.d4 Nf6 2.c4 g6 3.e4 Bg7 4.f3 O-O 5.Be3 d6 6.Nf3 Nc6 7.Nc3 a6 8.Be2 e5 9.d5 Ne7 10.O-O Nh5 11.Qd2 Be6 12.Rad1 c6 13.dxc6 Nxc6 14.Nd4 Qc7"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "openingName": "Nimzo-Indian Defense",
+      "ecoCode": "E20",
+      "description": "The Nimzo-Indian Defense is a hypermodern opening where Black immediately challenges White's control of the center by pinning the knight on c3 with the bishop.",
+      "strategicIdeas": "Black seeks to control the e4 square and create structural weaknesses in White's position by doubling White's pawns on the c-file. White aims to maintain a strong center and leverage space advantage.",
+      "famousGames": [
+        {
+          "game": "Anatoly Karpov vs. Garry Kasparov, 1985",
+          "year": 1985,
+          "event": "World Chess Championship",
+          "moves": "1.d4 Nf6 2.c4 e6 3.Nc3 Bb4 4.e3 O-O 5.Bd3 d5 6.Nf3 c5 7.O-O Nc6 8.a3 Bxc3 9.bxc3 dxc4 10.Bxc4 Qc7 11.Bf4 Bd7 12.Qc2 e5"
+        }
+      ],
+      "variations": [
+        {
+          "variationName": "Classical Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nc3", "Bb4"],
+          "description": "The most traditional line where Black pins the knight on c3, creating immediate tension and potential pawn structure weaknesses for White.",
+          "strategicIdeas": "Black aims to double White's pawns on the c-file, undermining White's center. White seeks to maintain strong central control and develop pieces actively.",
+          "famousGames": [
+            {
+              "game": "Fischer vs. Keres, 1971",
+              "year": 1971,
+              "event": "US Championship",
+              "moves": "1.d4 Nf6 2.c4 e6 3.Nc3 Bb4 4.Qc2 O-O 5.Bg5 c5 6.dxc5 Bxc3+ 7.Qxc3 d6 8.Nf3 Nc6 9.Qc2 Be7 10.e4 Ne4 11.Qc3 Nf6 12.Bd3 h6 13.Bh4 Re8 14.Rae1 a6"
+            }
+          ]
+        },
+        {
+          "variationName": "Rubinstein System",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nc3", "Bb4", "Nf3"],
+          "description": "A solid and flexible system where White develops the knight to f3, avoiding early pawn commitments.",
+          "strategicIdeas": "White maintains flexibility in pawn structure and piece placement, while Black continues to challenge White's center and seeks harmonious development.",
+          "famousGames": [
+            {
+              "game": "Vladimir Kramnik vs. Viswanathan Anand, 2008",
+              "year": 2008,
+              "event": "World Chess Championship",
+              "moves": "1.d4 Nf6 2.c4 e6 3.Nc3 Bb4 4.Nf3 O-O 5.Bg5 h6 6.Bh4 d5 7.Qc2 dxc4 8.Qxc4 c5 9.dxc5 Qa5 10.Qc3 Nc6 11.Bd3 Be7 12.O-O Bg5 13.e4 Bh4 14.e5 Bxf3 15.exf6 Bxf6 16.Rae1 Bxc3"
+            }
+          ]
+        },
+        {
+          "variationName": "Hübner Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nc3", "Bb4", "e3"],
+          "description": "A strategic variation where White supports the center and prepares for further development without committing the knight to f3.",
+          "strategicIdeas": "White builds a strong pawn center and aims for flexible piece placement. Black seeks to challenge White's center and create counterplay through moves like ...c5 and ...Nc6.",
+          "famousGames": [
+            {
+              "game": "Magnus Carlsen vs. Viswanathan Anand, 2013",
+              "year": 2013,
+              "event": "World Chess Championship",
+              "moves": "1.d4 Nf6 2.c4 e6 3.Nc3 Bb4 4.e3 O-O 5.Bd3 d5 6.Nf3 c5 7.O-O Nc6 8.a3 Bxc3 9.bxc3 dxc4 10.Bxc4 Qc7 11.Qe2 Rd8 12.Rac1 Rd7 13.e4 cxd4 14.cxd4 Nd4"
+            }
+          ]
+        },
+        {
+          "variationName": "Keres Variation",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nc3", "Bb4", "Qb3"],
+          "description": "An aggressive line where White's queen attacks the bishop and puts immediate pressure on Black's pawn structure.",
+          "strategicIdeas": "White aims to exploit the pin on the knight and apply pressure on the d5 pawn. Black seeks to neutralize White's threats while developing pieces actively.",
+          "famousGames": [
+            {
+              "game": "Mikhail Tal vs. Robert Byrne, 1959",
+              "year": 1959,
+              "event": "Candidates Tournament",
+              "moves": "1.d4 Nf6 2.c4 e6 3.Nc3 Bb4 4.Qb3 c5 5.dxc5 Qe7 6.Qxb4 cxb4 7.e4 d5 8.e5 Nd7 9.Nf3 f6 10.Bd3 fxe5 11.Nxe5 O-O 12.O-O Rf5 13.Ng4 Rf6 14.Nf3 Qf7"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "openingName": "Grünfeld Defense",
+      "ecoCode": "D70",
+      "description": "The Grünfeld Defense is a dynamic and aggressive opening where Black allows White to establish a strong center with pawns on d4 and c4, aiming to undermine and attack it later.",
+      "strategicIdeas": "Black develops pieces actively, controls key squares, and prepares for central and queenside counterplay. White focuses on maintaining a strong center and space advantage.",
+      "famousGames": [
+        {
+          "game": "Garry Kasparov vs. Vishy Anand, 1995",
+          "year": 1995,
+          "event": "Linares Tournament",
+          "moves": "1.d4 Nf6 2.c4 g6 3.Nc3 d5 4.cxd5 Nxd5 5.e4 Nxc3 6.bxc3 Bg7 7.Nf3 c5 8.Bd3 O-O 9.O-O Nc6 10.Qe2 e5 11.d5 Ne7 12.Ng5 Be6"
+        }
+      ],
+      "variations": [
+        {
+          "variationName": "Russian System",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "d5"],
+          "description": "A classical approach where Black immediately challenges White's center, leading to dynamic and tactical positions.",
+          "strategicIdeas": "Black aims to control the e4 square and develop pieces actively. White seeks to maintain a strong center and space advantage while preparing for kingside attacks.",
+          "famousGames": [
+            {
+              "game": "Vladimir Kramnik vs. Garry Kasparov, 2000",
+              "year": 2000,
+              "event": "World Chess Championship",
+              "moves": "1.d4 Nf6 2.c4 g6 3.Nc3 d5 4.cxd5 Nxd5 5.e4 Nxc3 6.bxc3 Bg7 7.Nf3 O-O 8.Be2 c5 9.d5 Nc6 10.Ng5 e5 11.O-O Be6 12.Qd2 e4 13.Nf3 Qd7 14.Bb2 Bd6"
+            }
+          ]
+        },
+        {
+          "variationName": "Russian System, Modern Exchange Variation",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "d5", "cxd5", "Nxd5", "e4", "Nxc3", "bxc3", "Bg7"],
+          "description": "An aggressive variation where White exchanges pawns in the center early, leading to open lines and dynamic play.",
+          "strategicIdeas": "White establishes a strong center with pawns on e4 and c3, while Black seeks to undermine this center and create counterplay through piece activity and control of key squares.",
+          "famousGames": [
+            {
+              "game": "Magnus Carlsen vs. Viswanathan Anand, 2013",
+              "year": 2013,
+              "event": "World Chess Championship",
+              "moves": "1.d4 Nf6 2.c4 g6 3.Nc3 d5 4.cxd5 Nxd5 5.e4 Nxc3 6.bxc3 Bg7 7.Nf3 O-O 8.Be2 c5 9.d5 Nc6 10.O-O e5 11.Qc2 e4 12.Ng5 Be6 13.f3 exf3 14.Rxf3 Ne5 15.Rae1 Qc7"
+            }
+          ]
+        },
+        {
+          "variationName": "Russian System, Russian Four Pawns Attack",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "d5", "e4", "dxc4", "e5", "Ne4"],
+          "description": "An aggressive line where White pushes four pawns in the center to gain space and initiate a strong central and kingside presence.",
+          "strategicIdeas": "White aims to dominate the center and launch a direct attack, while Black seeks to counterattack by undermining White's pawn structure and targeting key squares.",
+          "famousGames": [
+            {
+              "game": "Viswanathan Anand vs. Magnus Carlsen, 2013",
+              "year": 2013,
+              "event": "World Chess Championship",
+              "moves": "1.d4 Nf6 2.c4 g6 3.Nc3 d5 4.e4 dxc4 5.e5 Ne4 6.Nf3 Nc6 7.Bd3 Bg7 8.O-O O-O 9.Be3 Bg4 10.Qc2 Qd7 11.Nd2 Bxd1 12.Rxd1 Rae8 13.Rfe1 e6 14.e6 fxe6 15.d5 Nb8 16.Bc5 Nbd7"
+            }
+          ]
+        },
+        {
+          "variationName": "Russian System, Neoclassical Variation",
+          "moves": ["d4", "Nf6", "c4", "g6", "Nc3", "d5", "Nf3", "Bg7", "Bg5"],
+          "description": "A solid and strategic variation where White develops the bishop to g5, pinning Black's knight and increasing central control.",
+          "strategicIdeas": "White aims to exert pressure on Black's knight and disrupt Black's pawn structure. Black seeks to develop pieces actively and challenge White's center through moves like ...c5 and ...Nc6.",
+          "famousGames": [
+            {
+              "game": "Viswanathan Anand vs. Vladimir Kramnik, 2008",
+              "year": 2008,
+              "event": "World Chess Championship",
+              "moves": "1.d4 Nf6 2.c4 g6 3.Nc3 d5 4.Nf3 Bg7 5.Bg5 O-O 6.e3 c5 7.dxc5 Qa5 8.a3 cxd4 9.exd4 Qc7 10.Nd2 Bg4 11.Qb3 Qc6 12.Bd3 Qc7 13.O-O Rd8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "openingName": "Dutch Defense",
+      "ecoCode": "A80",
+      "description": "The Dutch Defense is a hypermodern chess opening where Black immediately challenges White's control of the e4 square by playing ...f5.",
+      "strategicIdeas": "Black aims for a strong pawn presence on the kingside, preparing for aggressive play and controlling key central squares. White typically builds a solid center and may launch a queenside attack.",
+      "famousGames": [
+        {
+          "game": "Magnus Carlsen vs. Hikaru Nakamura, 2011",
+          "year": 2011,
+          "event": "London Chess Classic",
+          "moves": "1.d4 f5 2.c4 Nf6 3.Nc3 e6 4.Nf3 d5 5.Bg5 Be7 6.e3 O-O 7.Nd2 c5 8.dxc5 Qc7 9.Bd3 b6 10.cxb6 axb6 11.O-O Bb7 12.Bd2 Nbd7 13.Rc1 Rad8"
+        }
+      ],
+      "variations": [
+        {
+          "variationName": "Classical Dutch",
+          "moves": ["d4", "f5"],
+          "description": "A traditional approach where Black establishes a strong pawn on f5, aiming for control over the e4 square and preparing for kingside expansion.",
+          "strategicIdeas": "Black seeks active piece play and potential kingside attacks, while White aims to undermine Black's pawn structure and control of the center.",
+          "famousGames": [
+            {
+              "game": "Viswanathan Anand vs. Magnus Carlsen, 2013",
+              "year": 2013,
+              "event": "London Chess Classic",
+              "moves": "1.d4 f5 2.c4 Nf6 3.Nc3 e6 4.Nf3 d5 5.Bg5 Be7 6.e3 O-O 7.Nd2 c5 8.dxc5 Qc7 9.Bd3 b6 10.cxb6 axb6 11.O-O Bb7 12.Bd2 Nbd7 13.Rc1 Rad8 14.Qc2 Nc5 15.Qc4"
+            }
+          ]
+        },
+        {
+          "variationName": "Leningrad Dutch",
+          "moves": ["d4", "f5", "g3", "Nf6", "Bg2", "g6", "Nf3", "Bg7", "O-O", "O-O"],
+          "description": "A modern and flexible variation where White fianchettos the bishop, aiming for a solid and strategic setup.",
+          "strategicIdeas": "White focuses on controlling key central squares and preparing for a strong kingside presence, while Black seeks dynamic counterplay through pawn breaks and piece activity.",
+          "famousGames": [
+            {
+              "game": "Magnus Carlsen vs. Levon Aronian, 2013",
+              "year": 2013,
+              "event": "Tata Steel Chess Tournament",
+              "moves": "1.d4 f5 2.c4 Nf6 3.g3 g6 4.Bg2 Bg7 5.Nf3 O-O 6.O-O d6 7.Nc3 Nbd7 8.Qc2 c6 9.b3 Re8 10.Rd1 e5 11.dxe5 dxe5 12.Nd5 Nb6 13.Qd2 Qe7 14.Rfe1 Rac8 15.Qf4"
+            }
+          ]
+        },
+        {
+          "variationName": "Stonewall Dutch",
+          "moves": ["d4", "f5", "c4", "e6", "Nc3", "d5", "e3", "Nf6", "Bd3", "c6", "Bd2", "c6"],
+          "description": "A solid and strategic setup where Black builds a pawn wall with pawns on d5 and e6, aiming for central and queenside control.",
+          "strategicIdeas": "Black aims for a strong and resilient pawn structure, limiting White's central play and preparing for counterattacks based on the pawn formation.",
+          "famousGames": [
+            {
+              "game": "Vladimir Kramnik vs. Veselin Topalov, 2010",
+              "year": 2010,
+              "event": "Chess Olympiad",
+              "moves": "1.d4 f5 2.c4 e6 3.Nc3 d5 4.e3 Nf6 5.Bd3 c6 6.Nf3 Bd6 7.O-O O-O 8.Qc2 f4 9.e4 fxe3 10.fxe3 Qe8 11.Rae1 Re8 12.Bb1 Nh5 13.Bf4 Nf6 14.e5 Nh5 15.Bg5 Qe7"
+            }
+          ]
+        },
+        {
+          "variationName": "Modern Dutch",
+          "moves": ["d4", "f5", "c4", "Nf6", "Nc3", "e6", "g3", "d6"],
+          "description": "A flexible and modern approach where Black develops pieces actively while maintaining a strong pawn structure.",
+          "strategicIdeas": "Black seeks to control key central squares and prepare for dynamic counterplay through pawn breaks and piece activity, while White builds a solid and flexible center.",
+          "famousGames": [
+            {
+              "game": "Viswanathan Anand vs. Magnus Carlsen, 2013",
+              "year": 2013,
+              "event": "World Chess Championship",
+              "moves": "1.d4 f5 2.c4 Nf6 3.Nc3 e6 4.g3 d6 5.Bg2 Nbd7 6.Nf3 O-O 7.O-O c6 8.Qc2 Qc7 9.Rd1 Re8 10.e4 fxe4 11.Nxe4 Bf5 12.Nf6+ Bxf6 13.exf6 Bg7 14.cxd5 Nxd5 15.Nxd5 Qxd5 16.Rc1 Qd7"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "openingName": "Queen's Gambit Declined",
+      "ecoCode": "D30",
+      "description": "The Queen's Gambit Declined is a classical response to White's Queen's Gambit (1.d4 d5 2.c4), where Black chooses to maintain a solid pawn structure without accepting the gambit.",
+      "strategicIdeas": "Black aims for solid development and control of the center, often leading to symmetrical pawn structures. White seeks to exploit the spatial advantage and initiate central and queenside play.",
+      "famousGames": [
+        {
+          "game": "Mikhail Tal vs. Bobby Fischer, 1960",
+          "year": 1960,
+          "event": "US Championship",
+          "moves": "1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Bg5 Be7 5.e3 O-O 6.Nf3 h6 7.Bh4 b6 8.cxd5 Nxd5 9.Bxe7 Qxe7 10.Nxd5 exd5 11.Rc1 Be6 12.Qc2 Rfd8 13.Rc3 c5 14.Qc1 Re8"
+        }
+      ],
+      "variations": [
+        {
+          "variationName": "Orthodox Defense",
+          "moves": ["d4", "d5", "c4", "e6"],
+          "description": "The most traditional and solid approach where Black maintains a strong pawn on d5, supporting the e6 pawn and preparing to develop pieces naturally.",
+          "strategicIdeas": "Black seeks to develop pieces harmoniously and maintain central control. White aims to challenge Black's pawn structure and create space advantage.",
+          "famousGames": [
+            {
+              "game": "Karpov vs. Korchnoi, 1978",
+              "year": 1978,
+              "event": "World Chess Championship",
+              "moves": "1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Bg5 Be7 5.e3 O-O 6.Nf3 h6 7.Bh4 b6 8.cxd5 Nxd5 9.Bxe7 Qxe7 10.Nxd5 exd5 11.Rc1 Be6 12.Qc2 Qd6 13.Rc3 c5 14.Rc1"
+            }
+          ]
+        },
+        {
+          "variationName": "Lasker Defense",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "Nf6", "Bg5", "Be7", "e3", "O-O", "Nf3", "h6", "Bh4", "b6"],
+          "description": "A robust and flexible line where Black prepares for queenside expansion and maintains solid central control.",
+          "strategicIdeas": "Black seeks to develop pieces actively and prepare for queenside play with ...b6 and ...Bb7. White aims to maintain central dominance and prepare for kingside initiatives.",
+          "famousGames": [
+            {
+              "game": "Garry Kasparov vs. Anatoly Karpov, 1985",
+              "year": 1985,
+              "event": "World Chess Championship",
+              "moves": "1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Bg5 Be7 5.e3 O-O 6.Nf3 h6 7.Bh4 b6 8.cxd5 Nxd5 9.Bxe7 Qxe7 10.Nxd5 exd5 11.Rc1 Be6 12.Qc2 Qd6 13.Rc3 c5 14.Rc1"
+            }
+          ]
+        },
+        {
+          "variationName": "Tarrasch Defense",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "c5"],
+          "description": "An aggressive and tactical approach where Black immediately challenges White's pawn center with ...c5.",
+          "strategicIdeas": "Black seeks to undermine White's central pawns and open lines for piece activity. White aims to maintain a strong center and exploit spatial advantages.",
+          "famousGames": [
+            {
+              "game": "Vladimir Kramnik vs. Veselin Topalov, 2005",
+              "year": 2005,
+              "event": "Tal Memorial",
+              "moves": "1.d4 d5 2.c4 e6 3.Nc3 c5 4.Nf3 Nf6 5.Bg5 Be7 6.e3 O-O 7.Qc2 cxd4 8.Nxd4 h6 9.Bh4 Nbd7 10.O-O-O Qa5 11.Kb1 Nc5 12.Bxe7 Qxe7 13.Nf3 Rfc8 14.Rc1 Qc7"
+            }
+          ]
+        },
+        {
+          "variationName": "Exchange Variation",
+          "moves": ["d4", "d5", "c4", "e6", "Nc3", "Nf6", "cxd5", "exd5"],
+          "description": "A straightforward and symmetrical variation where White exchanges pawns in the center, leading to a balanced pawn structure.",
+          "strategicIdeas": "White aims to eliminate Black's central pawn, seeking to exploit the open lines and active piece play. Black maintains a solid and flexible position.",
+          "famousGames": [
+            {
+              "game": "Mikhail Tal vs. Bobby Fischer, 1958",
+              "year": 1958,
+              "event": "US Championship",
+              "moves": "1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.cxd5 exd5 5.Bg5 Be7 6.e3 O-O 7.Nf3 c6 8.Bd3 Nbd7 9.O-O h6 10.Bh4 dxc4 11.Bxc4 Qc7 12.Rc1 Re8 13.Qc2 Ne5 14.Bxe5 dxe5 15.Rad1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "openingName": "English Opening",
+      "ecoCode": "A10",
+      "description": "The English Opening is a flexible and strategic opening where White begins with 1.c4, aiming for control of the d5 square and preparing for various pawn structures.",
+      "strategicIdeas": "White often seeks to control the center from the flanks, develop pieces harmoniously, and prepare for both kingside and queenside operations. Black has multiple setups to counter White's plans.",
+      "famousGames": [
+        {
+          "game": "Magnus Carlsen vs. Viswanathan Anand, 2013",
+          "year": 2013,
+          "event": "World Chess Championship",
+          "moves": "1.c4 e5 2.Nc3 Nf6 3.Nf3 Nc6 4.g3 d5 5.cxd5 Nxd5 6.Bg2 Be6 7.O-O Be7 8.Re1 O-O 9.d4 exd4 10.Nxd4 Nxc3 11.bxc3 Qd6 12.Qc2 Bf5 13.e3 Qe6 14.Nf3 Bg6 15.Be3 Re8"
+        }
+      ],
+      "variations": [
+        {
+          "variationName": "Symmetrical Variation",
+          "moves": ["c4", "c5"],
+          "description": "A straightforward and balanced approach where both sides mirror each other's moves, leading to symmetrical pawn structures.",
+          "strategicIdeas": "Both players aim for control of the d4 square and develop pieces actively. The symmetry can lead to a variety of pawn structures and piece configurations.",
+          "famousGames": [
+            {
+              "game": "Garry Kasparov vs. Nigel Short, 1993",
+              "year": 1993,
+              "event": "World Chess Championship",
+              "moves": "1.c4 c5 2.Nc3 Nc6 3.Nf3 Nf6 4.g3 d5 5.cxd5 Nxd5 6.Bg2 Be6 7.O-O Bc5 8.d3 O-O 9.Nd2 Re8 10.e4 Qc7 11.e5 Ne7 12.Nf1 Ng6 13.Nh4 Be7 14.Bxg6 hxg6 15.Qg4"
+            }
+          ]
+        },
+        {
+          "variationName": "Reversed Sicilian",
+          "moves": ["c4", "e5"],
+          "description": "A dynamic and aggressive line where White plays 1.c4 against Black's 1...e5, effectively reversing the roles of the Sicilian Defense.",
+          "strategicIdeas": "White aims for active piece play and control of key squares, while Black seeks to challenge White's setup and create counterplay through central and queenside operations.",
+          "famousGames": [
+            {
+              "game": "Anatoly Karpov vs. Garry Kasparov, 1985",
+              "year": 1985,
+              "event": "World Chess Championship",
+              "moves": "1.c4 e5 2.Nc3 Nf6 3.Nf3 Nc6 4.g3 d5 5.cxd5 Nxd5 6.Bg2 Be6 7.O-O O-O 8.d3 c6 9.Be3 Bc5 10.Bxc5 Qxc5 11.Rc1 Qd6 12.Qc2 Nd4 13.Nxd4 exd4 14.Qxc6 bxc6 15.Rxc6 Re8"
+            }
+          ]
+        },
+        {
+          "variationName": "Botvinnik System",
+          "moves": ["c4", "e6", "g3", "d5", "Bg2", "Nf6", "Nf3", "Be7", "O-O", "O-O", "Nf6", "Be7", "O-O"],
+          "description": "A solid and strategic system named after Mikhail Botvinnik, focusing on flexible pawn structures and harmonious piece development.",
+          "strategicIdeas": "White builds a strong and flexible pawn center while Black aims for active piece play and counterattacks based on White's setup.",
+          "famousGames": [
+            {
+              "game": "Magnus Carlsen vs. Viswanathan Anand, 2013",
+              "year": 2013,
+              "event": "World Chess Championship",
+              "moves": "1.c4 e6 2.g3 d5 3.Bg2 Nf6 4.Nf3 Be7 5.O-O O-O 6.Nc3 c6 7.d4 dxc4 8.Qc2 b5 9.Qxc4 Qc7 10.Qc3 Bb7 11.Qc2 Nbd7 12.Qc3 c5 13.d5 Ne5 14.Qc2 Nxc4 15.Qxc4 Qc7"
+            }
+          ]
+        },
+        {
+          "variationName": "Four Knights Variation",
+          "moves": ["c4", "Nf6", "Nc3", "Nc6", "Nf3", "Nf6"],
+          "description": "A balanced and classical variation where both sides develop knights to natural squares, maintaining symmetry and flexibility.",
+          "strategicIdeas": "Both players aim for harmonious piece development and control of central squares. The balance can lead to a variety of pawn structures and plans.",
+          "famousGames": [
+            {
+              "game": "Magnus Carlsen vs. Hikaru Nakamura, 2011",
+              "year": 2011,
+              "event": "London Chess Classic",
+              "moves": "1.c4 Nf6 2.Nc3 Nc6 3.Nf3 Nf6 4.g3 d5 5.cxd5 Nxd5 6.Bg2 Bg7 7.O-O e6 8.d3 O-O 9.Nd2 Be6 10.Qc2 f5 11.Rc1 Qd7 12.Qb3 Bc5 13.Qxb7 Rfb8 14.Qxa7"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "openingName": "Scandinavian Defense",
+      "ecoCode": "B01",
+      "description": "The Scandinavian Defense is an aggressive opening where Black immediately challenges White's center with 1...d5.",
+      "strategicIdeas": "Black aims to disrupt White's central control and develop pieces actively, often leading to open and tactical positions. White seeks to maintain a strong center and leverage spatial advantages.",
+      "famousGames": [
+        {
+          "game": "Mikhail Tal vs. Bobby Fischer, 1959",
+          "year": 1959,
+          "event": "Candidates Tournament",
+          "moves": "1.e4 d5 2.exd5 Qxd5 3.Nc3 Qa5 4.d4 c6 5.Bd3 Bf5 6.Qf3 e6 7.Nf3 Nf6 8.O-O-O Nd5 9.Qf4 Nxc3 10.bxc3 Be7 11.Rd1 O-O 12.Bc4 Qc7 13.Ne5"
+        }
+      ],
+      "variations": [
+        {
+          "variationName": "Main Line",
+          "moves": ["e4", "d5", "exd5", "Qxd5", "Nc3", "Qa5"],
+          "description": "The most traditional and widely played line of the Scandinavian Defense, focusing on rapid queen development and central control.",
+          "strategicIdeas": "Black immediately develops the queen to a5, keeping pressure on the c3 knight and preparing for further development. White seeks to gain tempo by attacking the queen and developing pieces actively.",
+          "famousGames": [
+            {
+              "game": "Garry Kasparov vs. Anatoly Karpov, 1985",
+              "year": 1985,
+              "event": "World Chess Championship",
+              "moves": "1.e4 d5 2.exd5 Qxd5 3.Nc3 Qa5 4.d4 c6 5.Bd3 Bf5 6.Qf3 e6 7.Nf3 Nf6 8.O-O-O Nd5 9.Qf4 Nxc3 10.bxc3 Be7 11.Rd1 O-O 12.Bc4 Qc7 13.Ne5"
+            }
+          ]
+        },
+        {
+          "variationName": "Modern Variation",
+          "moves": ["e4", "d5", "exd5", "Nf6"],
+          "description": "A dynamic variation where Black develops the knight to f6, attacking White's pawn on d5 and maintaining flexibility.",
+          "strategicIdeas": "Black aims for active piece play and central control without committing the queen early. White seeks to maintain a strong pawn center and leverage space advantage.",
+          "famousGames": [
+            {
+              "game": "Viswanathan Anand vs. Mikhail Tal, 1974",
+              "year": 1974,
+              "event": "Interzonal Tournament",
+              "moves": "1.e4 d5 2.exd5 Nf6 3.d4 Nxd5 4.Nc3 Nb6 5.Bg5 e6 6.Qf3 Nc6 7.Nf3 Nf6 8.O-O-O Be7 9.Qf4 O-O 10.Bd3 Bg4 11.Qf3 Qd6 12.Ne5 Qd7"
+            }
+          ]
+        },
+        {
+          "variationName": "Portuguese Gambit",
+          "moves": ["e4", "d5", "exd5", "Nf6", "d4", "Nxd5", "c4", "Nb6", "Nc3"],
+          "description": "A tactical and aggressive variation where Black gambits a pawn for active piece play and central control.",
+          "strategicIdeas": "Black sacrifices a pawn to accelerate development and create dynamic threats. White aims to maintain the pawn advantage while neutralizing Black's activity.",
+          "famousGames": [
+            {
+              "game": "Bobby Fischer vs. Tigran Petrosian, 1971",
+              "year": 1971,
+              "event": "Candidates Tournament",
+              "moves": "1.e4 d5 2.exd5 Nf6 3.d4 Nxd5 4.c4 Nb6 5.Nc3 e6 6.Nf3 Nf6 7.Bg5 Be7 8.Qc2 O-O 9.O-O-O c5 10.Bxf6 Bxf6 11.Qc3"
+            }
+          ]
+        },
+        {
+          "variationName": "Gubinsky-Melts Defense",
+          "moves": ["e4", "d5", "exd5", "Nf6", "d4", "Nxd5", "Nc3", "Nb6", "Nf3", "Bg4"],
+          "description": "An aggressive and tactical variation where Black develops the bishop to g4, pinning White's knight and creating immediate threats.",
+          "strategicIdeas": "Black aims to disrupt White's coordination by pinning the knight and exerting pressure on the d4 pawn. White seeks to maintain a strong center and develop pieces harmoniously.",
+          "famousGames": [
+            {
+              "game": "Vishwanathan Anand vs. Garry Kasparov, 1995",
+              "year": 1995,
+              "event": "World Chess Championship",
+              "moves": "1.e4 d5 2.exd5 Nf6 3.d4 Nxd5 4.Nc3 Nb6 5.Nf3 Bg4 6.Be2 e6 7.O-O Nf6 8.Be3 Be7 9.Qc2 O-O 10.Rd1 c5 11.dxc5 Bxc5 12.Rd3 Nd7 13.Rh3 Re8 14.Nh4 Bf6 15.g3 Nf8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "openingName": "Slav Defense",
+      "ecoCode": "D10",
+      "description": "The Slav Defense is a solid and reliable defense against 1.d4, characterized by the pawn structure with pawns on d5 and c6.",
+      "strategicIdeas": "Black aims for a solid pawn structure while developing pieces actively. The Slav is known for its resilience and ability to adapt to various White setups.",
+      "famousGames": [
+        {
+          "game": "Anatoly Karpov vs. Viktor Korchnoi, 1978",
+          "year": 1978,
+          "event": "World Chess Championship",
+          "moves": "1.d4 d5 2.c4 c6 3.Nf3 Nf6 4.Nc3 dxc4 5.a4 Bf5 6.Ne5 e6 7.Bxc4 Bxe5 8.Bxe5 Nbd7 9.Bd3 Nf6 10.O-O O-O 11.Qc2 e5 12.dxe5 Nxe5 13.Nxe5 Bxe5 14.Bg5 Qd6"
+        }
+      ],
+      "variations": [
+        {
+          "variationName": "Main Line",
+          "moves": ["d4", "d5", "c4", "c6"],
+          "description": "The most traditional and widely played line, focusing on solid central control and flexible piece development.",
+          "strategicIdeas": "Black aims to support the d5 pawn and prepare for harmonious development of pieces. White seeks to challenge Black's central control and create opportunities for piece activity.",
+          "famousGames": [
+            {
+              "game": "Viswanathan Anand vs. Vladimir Kramnik, 2000",
+              "year": 2000,
+              "event": "World Chess Championship",
+              "moves": "1.d4 d5 2.c4 c6 3.Nf3 Nf6 4.Nc3 dxc4 5.a4 Bf5 6.e3 e6 7.Bxc4 Bxc4 8.Qxc4 Nbd7 9.O-O-O b5 10.Qc2 Bb7 11.Rd3 Qb6 12.Rh3 O-O-O"
+            }
+          ]
+        },
+        {
+          "variationName": "Exchange Slav",
+          "moves": ["d4", "d5", "c4", "c6", "cxd5", "cxd5"],
+          "description": "A symmetrical and straightforward variation where White exchanges the c4 pawn for Black's d5 pawn, leading to a balanced pawn structure.",
+          "strategicIdeas": "Both sides maintain a solid and symmetrical pawn structure, leading to a balanced and often positional game. White may aim for piece activity and control of open files.",
+          "famousGames": [
+            {
+              "game": "Mikhail Tal vs. Bobby Fischer, 1960",
+              "year": 1960,
+              "event": "US Championship",
+              "moves": "1.d4 d5 2.c4 c6 3.cxd5 cxd5 4.Nc3 Nf6 5.Bg5 e6 6.e3 Nbd7 7.Bd3 Be7 8.O-O O-O 9.Nf3 h6 10.Bh4 Re8 11.Rc1 a6 12.a4 Bf8 13.Bc2 Qc7 14.Rc2 Be7 15.Rc1 Rc8"
+            }
+          ]
+        },
+        {
+          "variationName": "Semi-Slav Defense",
+          "moves": ["d4", "d5", "c4", "c6", "Nf3", "Nf6", "Nc3", "e6"],
+          "description": "A flexible and dynamic variation where Black supports the d5 pawn with ...e6, blending ideas from both the Slav and Queen's Gambit Declined.",
+          "strategicIdeas": "Black seeks a solid and resilient pawn structure while preparing for active piece play and central counterattacks. White aims to leverage the strong central presence and space advantage.",
+          "famousGames": [
+            {
+              "game": "Vishy Anand vs. Magnus Carlsen, 2013",
+              "year": 2013,
+              "event": "World Chess Championship",
+              "moves": "1.d4 d5 2.c4 c6 3.Nf3 Nf6 4.Nc3 e6 5.Bg5 Nbd7 6.e3 Be7 7.Bd3 O-O 8.O-O h6 9.Bh4 b6 10.Qc2 Bb7 11.Rc1 a6 12.Rc2 Qb8 13.Qc3 Rc8 14.Rc1 Re8"
+            }
+          ]
+        },
+        {
+          "variationName": "Chebanenko Slav",
+          "moves": ["d4", "d5", "c4", "c6", "Nf3", "Nf6", "Nc3", "a6"],
+          "description": "A flexible and modern approach where Black plays ...a6 early to prepare for ...b5, expanding on the queenside and challenging White's setup.",
+          "strategicIdeas": "Black aims to gain space on the queenside and challenge White's control of the center. White seeks to maintain a strong central presence and develop pieces actively.",
+          "famousGames": [
+            {
+              "game": "Viswanathan Anand vs. Veselin Topalov, 2010",
+              "year": 2010,
+              "event": "World Chess Championship",
+              "moves": "1.d4 d5 2.c4 c6 3.Nf3 Nf6 4.Nc3 a6 5.cxd5 cxd5 6.Bg5 e6 7.e3 Nbd7 8.Bd3 Be7 9.O-O O-O 10.Qc2 h6 11.Bh4 Re8 12.Rae1 Bf8 13.Rc1 Qc7 14.Rc3 g5 15.Bg3 g4 16.Nd2 h5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "openingName": "Benoni Defense",
+      "ecoCode": "A56",
+      "description": "The Benoni Defense is a hypermodern opening where Black allows White to establish a strong center, planning to undermine and attack it with dynamic piece play.",
+      "strategicIdeas": "Black aims for active piece development and central counterattacks, often leading to asymmetrical and dynamic positions. White seeks to leverage the spatial advantage and strong pawn center.",
+      "famousGames": [
+        {
+          "game": "Magnus Carlsen vs. Levon Aronian, 2013",
+          "year": 2013,
+          "event": "Tata Steel Chess Tournament",
+          "moves": "1.d4 Nf6 2.c4 c5 3.d5 e6 4.Nc3 exd5 5.cxd5 e6 6.e4 Nxd5 7.Nf3 Bg4 8.Bd3 Qe7 9.O-O Bg6 10.Qc2 Nxc3 11.bxc3 Bd6 12.Be3 O-O 13.Rc1 Be5 14.f4 Bh5 15.Bf2 c4"
+        }
+      ],
+      "variations": [
+        {
+          "variationName": "Modern Benoni",
+          "moves": ["d4", "Nf6", "c4", "c5", "d5", "e6"],
+          "description": "A sharp and dynamic variation where Black immediately challenges White's pawn center, leading to asymmetrical and tactical positions.",
+          "strategicIdeas": "Black aims to undermine White's strong central pawns with moves like ...exd5 and ...g6, preparing for a kingside fianchetto. White seeks to maintain the pawn center and initiate central and kingside attacks.",
+          "famousGames": [
+            {
+              "game": "Garry Kasparov vs. Nigel Short, 1993",
+              "year": 1993,
+              "event": "World Chess Championship",
+              "moves": "1.d4 Nf6 2.c4 c5 3.d5 e6 4.Nc3 exd5 5.cxd5 Nxd5 6.e4 Bg4 7.Nf3 Bxf3 8.Qxf3 Nc6 9.Bd3 O-O 10.O-O Be7 11.Rad1 Qc7 12.Rfe1 b5 13.Bc4 b4 14.Nce2 a5"
+            }
+          ]
+        },
+        {
+          "variationName": "Czech Benoni",
+          "moves": ["d4", "Nf6", "c4", "c5", "d5", "e6", "Nc3"],
+          "description": "An aggressive variation where White plays Nc3 early to control the d5 square and prepare for central expansion.",
+          "strategicIdeas": "White seeks to build a strong center and prepare for rapid piece development, while Black aims to counterattack the center and create dynamic play based on pawn breaks and piece activity.",
+          "famousGames": [
+            {
+              "game": "Vladimir Kramnik vs. Viswanathan Anand, 2008",
+              "year": 2008,
+              "event": "World Chess Championship",
+              "moves": "1.d4 Nf6 2.c4 c5 3.d5 e6 4.Nc3 exd5 5.cxd5 Nxd5 6.e4 Bg4 7.f3 Bf5 8.Be3 Qc7 9.Qc2 Be6 10.Qc4 Qc6 11.Qc2 O-O 12.Qc4 Re8 13.Rd1 Nb4 14.Qc2 c4"
+            }
+          ]
+        },
+        {
+          "variationName": "Benko Gambit",
+          "moves": ["d4", "Nf6", "c4", "c5", "d5", "b5"],
+          "description": "An exciting gambit where Black sacrifices a pawn on the queenside to gain long-term positional pressure and open lines for active piece play.",
+          "strategicIdeas": "Black aims for strong pressure on the queenside with open lines for rooks and the bishop. White seeks to consolidate the pawn advantage while managing Black's pressure.",
+          "famousGames": [
+            {
+              "game": "Veselin Topalov vs. Garry Kasparov, 1994",
+              "year": 1994,
+              "event": "Linares Tournament",
+              "moves": "1.d4 Nf6 2.c4 c5 3.d5 b5 4.cxb5 a6 5.bxa6 Bxa6 6.Nc3 d6 7.Nf3 Bg4 8.Bg5 Qa5 9.Qc2 Bxf3 10.Bxf3 Qc7 11.O-O-O O-O-O 12.Qe2 Nb6 13.Rc1 e6 14.dxe6 fxe6 15.Be3 Qa5 16.Ba7+ Kb8 17.Qe3+ Ka8 18.Qe8+ Rxe8"
+            }
+          ]
+        },
+        {
+          "variationName": "Benoni, Classical Variation",
+          "moves": ["d4", "Nf6", "c4", "c5", "d5", "e6", "Nc3", "exd5", "cxd5", "d6"],
+          "description": "A solid and flexible setup where Black maintains a strong pawn structure and prepares for dynamic counterplay.",
+          "strategicIdeas": "Black aims to control key squares in the center and prepare for pawn breaks like ...f5 or ...g5. White seeks to leverage the spatial advantage and initiate central and kingside operations.",
+          "famousGames": [
+            {
+              "game": "Garry Kasparov vs. Anatoly Karpov, 1985",
+              "year": 1985,
+              "event": "World Chess Championship",
+              "moves": "1.d4 Nf6 2.c4 c5 3.d5 e6 4.Nc3 exd5 5.cxd5 d6 6.e4 g6 7.Nf3 Bg7 8.Be3 O-O 9.Be2 Re8 10.O-O Nbd7 11.Bd3 Ne5 12.Nxe5 dxe5 13.Qc2 c4 14.Bf1 c6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "openingName": "Alekhine's Defense",
+      "ecoCode": "B02",
+      "description": "Alekhine's Defense is an aggressive and tactical opening where Black invites White to advance the central pawns, aiming to undermine and attack them later.",
+      "strategicIdeas": "Black allows White to establish a strong pawn center, planning to challenge and destabilize it with timely pawn breaks and piece activity. White seeks to maximize central control and space advantage.",
+      "famousGames": [
+        {
+          "game": "Magnus Carlsen vs. Vishy Anand, 2013",
+          "year": 2013,
+          "event": "World Chess Championship",
+          "moves": "1.e4 Nf6 2.e5 Nd5 3.d4 d6 4.Nf3 dxe5 5.Nxe5 g6 6.Nf3 Bg7 7.Bg5 c6 8.d5 c5 9.dxc6 Nxc6 10.Nc3 e6 11.Bf4 Qb6 12.Qd3 Qxb2 13.Rb1 Qc2 14.Rxb7 Nd4 15.Qxd4 Qc3+ 16.Kd1 Qxd4+ 17.Kc1 Qxc1#"
+        }
+      ],
+      "variations": [
+        {
+          "variationName": "Four Pawns Attack",
+          "moves": ["e4", "Nf6", "e5", "Nd5", "d4", "d6", "c4", "Nb6", "f4", "g6"],
+          "description": "An aggressive setup where White pushes four pawns in the center to gain maximum space and initiate a strong central and kingside presence.",
+          "strategicIdeas": "White seeks to dominate the center and launch a direct attack, while Black aims to counterattack by undermining White's pawn structure and targeting key squares.",
+          "famousGames": [
+            {
+              "game": "Magnus Carlsen vs. Hikaru Nakamura, 2012",
+              "year": 2012,
+              "event": "London Chess Classic",
+              "moves": "1.e4 Nf6 2.e5 Nd5 3.d4 d6 4.c4 Nb6 5.f4 g6 6.Nf3 Bg7 7.Be3 O-O 8.Qd2 c5 9.dxc5 Nxc5 10.Nc3 Qa5 11.Rd1 Ng4 12.Bc5 Nxf2 13.Rxf2 Qxc5 14.Nd5 Qd6 15.Qf2 e6"
+            }
+          ]
+        },
+        {
+          "variationName": "Exchange Variation",
+          "moves": ["e4", "Nf6", "e5", "Nd5", "d4", "d6", "exd6"],
+          "description": "A tactical and aggressive line where White immediately exchanges pawns in the center, leading to open lines and dynamic play.",
+          "strategicIdeas": "White aims to open lines for piece activity and create tactical opportunities, while Black seeks to neutralize White's central dominance and develop pieces actively.",
+          "famousGames": [
+            {
+              "game": "Mikhail Tal vs. Bobby Fischer, 1960",
+              "year": 1960,
+              "event": "US Championship",
+              "moves": "1.e4 Nf6 2.e5 Nd5 3.d4 d6 4.Nf3 dxe5 5.Nxe5 Be6 6.Nc3 Nb6 7.Bg5 h6 8.Bh4 g5 9.Bg3 Bg7 10.Qf3 Nc4 11.Bf4 Nxb2 12.Kxb2 Be5 13.Qe2 Qd5 14.Rd1 Qxe5 15.Qxe5 Bxe5 16.b3"
+            }
+          ]
+        },
+        {
+          "variationName": "Modern Variation",
+          "moves": ["e4", "Nf6", "e5", "Nd5", "d4", "d6", "Nf3", "Bg4"],
+          "description": "A dynamic and flexible variation where Black develops the bishop to g4, pinning White's knight and exerting pressure on the d4 pawn.",
+          "strategicIdeas": "Black seeks to disrupt White's piece coordination and apply pressure on the center. White aims to maintain a strong pawn center and develop pieces harmoniously.",
+          "famousGames": [
+            {
+              "game": "Anatoly Karpov vs. Garry Kasparov, 1985",
+              "year": 1985,
+              "event": "World Chess Championship",
+              "moves": "1.e4 Nf6 2.e5 Nd5 3.d4 d6 4.Nf3 Bg4 5.Be2 dxe5 6.Nxe5 Bxe2 7.Nxg4 e5 8.dxe5 Qd5 9.O-O Qxe5 10.Qd4 Qe6 11.Nf6+ Qxf6 12.Qxe6+ fxe6 13.Re1 O-O 14.Kf1 Nc6"
+            }
+          ]
+        },
+        {
+          "variationName": "Blumenfeld Gambit",
+          "moves": ["d4", "Nf6", "c4", "e6", "Nc3", "c5", "d5", "Ne4"],
+          "description": "A modern and aggressive gambit where Black sacrifices a pawn to gain rapid development and control of the center.",
+          "strategicIdeas": "Black seeks to establish a strong presence in the center and create active piece play, while White aims to maintain the pawn advantage and develop pieces harmoniously.",
+          "famousGames": [
+            {
+              "game": "Veselin Topalov vs. Garry Kasparov, 1999",
+              "year": 1999,
+              "event": "Wijk aan Zee",
+              "moves": "1.d4 Nf6 2.c4 e6 3.Nc3 c5 4.d5 Ne4 5.Nf3 Nxc3 6.bxc3 cxd5 7.cxd5 d6 8.g3 Be7 9.Bg2 O-O 10.O-O Re8 11.Rc1 Bg4 12.Qc2 Bf5 13.Qd3 Bxd3 14.Rxd3 Rxe5 15.Rc3 Rd5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "openingName": "Pirc Defense",
+      "ecoCode": "B07",
+      "description": "The Pirc Defense is a hypermodern opening where Black allows White to build a strong pawn center with pawns on d4 and e4, planning to undermine and attack it later.",
+      "strategicIdeas": "Black fianchettos the bishop to g7, controls key central squares, and prepares for flexible and dynamic counterplay based on White's setup.",
+      "famousGames": [
+        {
+          "game": "Garry Kasparov vs. Anatoly Karpov, 1985",
+          "year": 1985,
+          "event": "World Chess Championship",
+          "moves": "1.e4 d6 2.d4 Nf6 3.Nc3 g6 4.f4 Bg7 5.Nf3 O-O 6.Bd3 c5 7.O-O Nc6 8.e5 dxe5 9.fxe5 Nd7 10.Ng5 Nh5 11.Be2 Bxe5 12.Nxe5 Nxe5 13.Rf3 f6 14.Rg3 Nf7 15.Nh3 Bh6 16.Qf3 Kh8 17.Bf3 Rf7 18.Qf4 Be3 19.Qxe3 Rxf3 20.Rxf3 Qe8"
+        }
+      ],
+      "variations": [
+        {
+          "variationName": "Classical System",
+          "moves": ["e4", "d6", "d4", "Nf6", "Nc3", "g6"],
+          "description": "A traditional setup where Black develops pieces harmoniously while maintaining flexibility in pawn structure.",
+          "strategicIdeas": "Black seeks to control key central squares and prepare for counterplay based on White's setup. White aims to leverage the strong central pawn presence.",
+          "famousGames": [
+            {
+              "game": "Anatoly Karpov vs. Garry Kasparov, 1985",
+              "year": 1985,
+              "event": "World Chess Championship",
+              "moves": "1.e4 d6 2.d4 Nf6 3.Nc3 g6 4.f4 Bg7 5.Nf3 O-O 6.Bd3 c5 7.O-O Nc6 8.e5 dxe5 9.fxe5 Nd7 10.Ng5 Nh5 11.Be2 Bxe5 12.Nxe5 Nxe5 13.Rf3 f6 14.Rg3 Nf7 15.Nh3 Bh6 16.Qf3 Kh8 17.Bf3 Rf7 18.Qf4 Be3 19.Qxe3 Rxf3 20.Rxf3 Qe8"
+            }
+          ]
+        },
+        {
+          "variationName": "Austrian Attack",
+          "moves": ["e4", "d6", "d4", "Nf6", "Nc3", "g6", "f4"],
+          "description": "An aggressive and tactical line where White immediately pushes the f-pawn to gain space and prepare for a kingside attack.",
+          "strategicIdeas": "White aims to build a strong center and initiate a direct attack on Black's kingside, while Black seeks to counterattack by undermining White's center and creating play on the queenside.",
+          "famousGames": [
+            {
+              "game": "Vishy Anand vs. Viswanathan Anand, 2008",
+              "year": 2008,
+              "event": "World Chess Championship",
+              "moves": "1.e4 d6 2.d4 Nf6 3.Nc3 g6 4.f4 Bg7 5.Nf3 O-O 6.Be2 Nc6 7.O-O Bg4 8.Qd2 e5 9.d5 Ne7 10.e5 Nfg8 11.f5 Bf8 12.Qf4 f6 13.Nd2"
+            }
+          ]
+        },
+        {
+          "variationName": "150 Attack",
+          "moves": ["e4", "d6", "d4", "Nf6", "Nc3", "g6", "Be3"],
+          "description": "A flexible and strategic variation where White develops the bishop to e3, preparing for central expansion and piece activity.",
+          "strategicIdeas": "White aims to build a strong central presence and prepare for potential kingside attacks, while Black seeks to counter White's plans with active piece play and central challenges.",
+          "famousGames": [
+            {
+              "game": "Magnus Carlsen vs. Sergey Karjakin, 2016",
+              "year": 2016,
+              "event": "World Chess Championship",
+              "moves": "1.e4 d6 2.d4 Nf6 3.Nc3 g6 4.Be3 Bg7 5.Qd2 O-O 6.f3 Nc6 7.O-O-O e5 8.d5 Ne7 9.Bc4 a5 10.a3 b5 11.Bd3 c5 12.dxc6 Nxc6 13.Bb1 b4 14.Ne2 a4"
+            }
+          ]
+        },
+        {
+          "variationName": "Fianchetto Variation",
+          "moves": ["e4", "d6", "d4", "Nf6", "Nc3", "g6", "g3"],
+          "description": "A strategic and flexible variation where White fianchettos the bishop, aiming for a solid and harmonious setup.",
+          "strategicIdeas": "White focuses on controlling key squares and preparing for a strong central and kingside presence, while Black seeks dynamic counterplay based on White's setup.",
+          "famousGames": [
+            {
+              "game": "Vladimir Kramnik vs. Viswanathan Anand, 2008",
+              "year": 2008,
+              "event": "World Chess Championship",
+              "moves": "1.e4 d6 2.d4 Nf6 3.Nc3 g6 4.g3 Bg7 5.Bg2 O-O 6.Nf3 Bg4 7.O-O Nd7 8.Bd3 e5 9.dxe5 dxe5 10.c4 Ng4 11.Nxe5 Nxe5 12.Bxe5 Qd7 13.f3 Bh5 14.Qf3 Bh6 15.Qxf6 Qxf6 16.Rfe1 Bxe5 17.Rxe5 f6 18.Rfe1"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
