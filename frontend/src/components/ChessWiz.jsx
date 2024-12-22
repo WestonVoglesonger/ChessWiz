@@ -136,6 +136,38 @@ const ChessWiz = () => {
     }
   };
 
+  const handlePrevMove = () => {
+    if (!currentMoves.length) {
+      setFeedback("No moves to step back.");
+      return;
+    }
+    if (currentIndex <= 0) {
+      setFeedback("Already at the first move.");
+      return;
+    }
+    game.undo(); // Undo the last move
+    setBoardPosition(game.fen());
+    setCurrentIndex(currentIndex - 1);
+    setFeedback("Stepped back one move.");
+  };
+
+  const handleNextMove = () => {
+    if (!currentMoves.length) {
+      setFeedback("No moves to step forward.");
+      return;
+    }
+    if (currentIndex >= currentMoves.length) {
+      setFeedback("Already at the last move.");
+      return;
+    }
+    const nextMove = currentMoves[currentIndex];
+    game.move(nextMove);
+    setBoardPosition(game.fen());
+    setCurrentIndex(currentIndex + 1);
+    setFeedback(`Forward move: ${nextMove}`);
+  };
+  
+
   /**
    * If no variation is selected => freeplay
    * If a variation is selected => check correctness
