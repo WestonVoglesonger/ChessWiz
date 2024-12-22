@@ -14,8 +14,8 @@ app = Flask(__name__)
 # Dynamically configure CORS to allow your frontend URL
 CORS(app, origins=["https://<WestonVoglesonger>.github.io/ChessWiz"])
 
-OPENINGS_FILE = "openings.json"
-PROGRESS_FILE = "progress.json"
+OPENINGS_FILE = "backend/openings.json"
+PROGRESS_FILE = "backend/progress.json"
 
 openings_data = []
 user_progress = {}
