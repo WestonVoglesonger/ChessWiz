@@ -12,7 +12,7 @@ from flask_cors import CORS
 app = Flask(__name__)
 
 # Dynamically configure CORS to allow your frontend URL
-CORS(app, origins=["https://<WestonVoglesonger>.github.io/ChessWiz"])
+CORS(app, origins=["https://WestonVoglesonger.github.io/ChessWiz"])
 
 OPENINGS_FILE = "openings.json"
 PROGRESS_FILE = "progress.json"
