@@ -1,6 +1,6 @@
 {
   "name": "chesswiz-frontend",
-  "homepage": "https://<WestonVoglesonger>.github.io/<ChessWiz>",
+  "homepage": "https://WestonVoglesonger.github.io/ChessWiz",
   "version": "1.0.0",
   "scripts": {
     "dev": "vite",
