@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState, useEffect } from "react";
 import {
   BookOpen,
   ChevronRight,
@@ -7,267 +7,237 @@ import {
   ArrowLeft,
   ArrowRight,
   Maximize,
-  Minimize
-} from "lucide-react"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Alert, AlertDescription } from "@/components/ui/alert"
-import { Chess } from "chess.js"
-import "chessboard-element"
+  Minimize,
+} from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Alert, AlertDescription } from "@/components/ui/alert";
+import { Chess } from "chess.js";
+import "chessboard-element";
 
 const ChessWiz = () => {
-  const [loading, setLoading] = useState(false)
-  const [game] = useState(new Chess())
+  const [loading, setLoading] = useState(false);
+  const [game] = useState(new Chess());
+
+  // Backend URL from environment variable
+  const API_BASE_URL = import.meta.env.VITE_API_URL || "http://127.0.0.1:1600";
 
   // Opening & variation info
-  const [currentOpeningId, setCurrentOpeningId] = useState(null)
-  const [currentVariationName, setCurrentVariationName] = useState(null)
+  const [currentOpeningId, setCurrentOpeningId] = useState(null);
+  const [currentVariationName, setCurrentVariationName] = useState(null);
 
   // Moves for the currently selected variation
-  const [currentMoves, setCurrentMoves] = useState([])
-  const [currentIndex, setCurrentIndex] = useState(0)
+  const [currentMoves, setCurrentMoves] = useState([]);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   // Various states for messages, positions, etc.
-  const [feedback, setFeedback] = useState("")
-  const [wrongMove, setWrongMove] = useState(false)
+  const [feedback, setFeedback] = useState("");
+  const [wrongMove, setWrongMove] = useState(false);
 
   // The FEN after the last correct move
-  const [lastFen, setLastFen] = useState("start")
-  const [boardPosition, setBoardPosition] = useState("start")
+  const [lastFen, setLastFen] = useState("start");
+  const [boardPosition, setBoardPosition] = useState("start");
 
   // Loaded openings from API (only has summary info)
-  const [openings, setOpenings] = useState([])
+  const [openings, setOpenings] = useState([]);
 
   // Full detail for the currently selected opening
-  const [selectedOpening, setSelectedOpening] = useState(null)
+  const [selectedOpening, setSelectedOpening] = useState(null);
 
   // Fullscreen toggle
-  const [isFullscreen, setIsFullscreen] = useState(false)
+  const [isFullscreen, setIsFullscreen] = useState(false);
 
   // On mount, attach the "drop" event to chessboard
   useEffect(() => {
-    const boardEl = document.querySelector("chess-board")
+    const boardEl = document.querySelector("chess-board");
     if (boardEl) {
-      boardEl.addEventListener("drop", handlePieceDrop)
+      boardEl.addEventListener("drop", handlePieceDrop);
     }
     return () => {
       if (boardEl) {
-        boardEl.removeEventListener("drop", handlePieceDrop)
+        boardEl.removeEventListener("drop", handlePieceDrop);
       }
-    }
-  }, [currentOpeningId, currentVariationName, currentIndex])
+    };
+  }, [currentOpeningId, currentVariationName, currentIndex]);
 
   /**
    * Fetch the short list of openings from /api/openings
    */
   const loadOpenings = async () => {
-    setLoading(true)
+    setLoading(true);
     try {
-      const resp = await fetch("/api/openings")
+      const resp = await fetch(`${API_BASE_URL}/api/openings`);
       if (!resp.ok) {
-        setFeedback("Error loading openings.")
-        return
+        setFeedback("Error loading openings.");
+        return;
       }
-      const data = await resp.json()
-      setOpenings(data)
+      const data = await resp.json();
+      setOpenings(data);
     } catch (error) {
-      console.error(error)
-      setFeedback("Error fetching openings data.")
+      console.error("Error fetching openings:", error);
+      setFeedback("Error fetching openings data.");
     } finally {
-      setLoading(false)
+      setLoading(false);
     }
-  }
+  };
 
   /**
    * When user selects an opening from the sidebar, fetch full details.
    */
   const handleSelectOpening = async (openingId) => {
     try {
-      setFeedback("Loading opening details...")
-      const resp = await fetch(`/api/openings/${openingId}`)
+      setFeedback("Loading opening details...");
+      const resp = await fetch(`${API_BASE_URL}/api/openings/${openingId}`);
       if (!resp.ok) {
-        setFeedback("Error loading the full opening details.")
-        return
+        setFeedback("Error loading the full opening details.");
+        return;
       }
-      const data = await resp.json()
-      setSelectedOpening(data)   // now we have description, strategicIdeas, etc.
-      setFeedback("")
+      const data = await resp.json();
+      setSelectedOpening(data); // now we have description, strategicIdeas, etc.
+      setFeedback("");
     } catch (err) {
-      console.error(err)
-      setFeedback("Error fetching the full opening details.")
+      console.error("Error fetching opening details:", err);
+      setFeedback("Error fetching the full opening details.");
     }
-  }
+  };
 
   /**
    * Start practicing a variation (fetch the moves from /api/openings/<id>/<variation>)
    */
   const startVariationPractice = async (openingId, variationName) => {
-    setCurrentOpeningId(openingId)
-    setCurrentVariationName(variationName)
-    setCurrentIndex(0)
-    setCurrentMoves([])
-    setFeedback("")
-    setWrongMove(false)
+    setCurrentOpeningId(openingId);
+    setCurrentVariationName(variationName);
+    setCurrentIndex(0);
+    setCurrentMoves([]);
+    setFeedback("");
+    setWrongMove(false);
 
-    game.reset()
-    setBoardPosition("start")
-    setLastFen("start")
+    game.reset();
+    setBoardPosition("start");
+    setLastFen("start");
 
     try {
-      const resp = await fetch(`/api/openings/${openingId}/${variationName}`)
+      const resp = await fetch(
+        `${API_BASE_URL}/api/openings/${openingId}/${variationName}`
+      );
       if (!resp.ok) {
-        setFeedback("Error loading variation moves.")
-        return
+        setFeedback("Error loading variation moves.");
+        return;
       }
-      const movesData = await resp.json()
+      const movesData = await resp.json();
       if (!Array.isArray(movesData)) {
-        setFeedback("Invalid variation data.")
-        return
+        setFeedback("Invalid variation data.");
+        return;
       }
-      setCurrentMoves(movesData)
-      setFeedback("Variation loaded. Make the first move!")
+      setCurrentMoves(movesData);
+      setFeedback("Variation loaded. Make the first move!");
     } catch (error) {
-      console.error(error)
-      setFeedback("Error fetching variation data.")
+      console.error("Error fetching variation data:", error);
+      setFeedback("Error fetching variation data.");
     }
-  }
+  };
 
   /**
    * If no variation is selected => freeplay
    * If a variation is selected => check correctness
    */
   const handlePieceDrop = (event) => {
-    const { source, target, setAction } = event.detail
+    const { source, target, setAction } = event.detail;
 
     // Free-play if no moves loaded
     if (currentMoves.length === 0) {
-      const move = game.move({ from: source, to: target, promotion: "q" })
+      const move = game.move({ from: source, to: target, promotion: "q" });
       if (!move) {
-        // Illegal => silent snapback
-        setAction("snapback")
+        setAction("snapback");
       } else {
-        setBoardPosition(game.fen())
+        setBoardPosition(game.fen());
       }
-      return
+      return;
     }
 
     // Variation loaded => check correctness
-    const move = game.move({ from: source, to: target, promotion: "q" })
+    const move = game.move({ from: source, to: target, promotion: "q" });
     if (!move) {
-      // Actually illegal => silent snapback
-      setAction("snapback")
-      return
+      setAction("snapback");
+      return;
     }
 
-    const userMove = move.san.toLowerCase()
-    const correctNext = currentMoves[currentIndex]?.toLowerCase()
+    const userMove = move.san.toLowerCase();
+    const correctNext = currentMoves[currentIndex]?.toLowerCase();
 
     if (correctNext && userMove === correctNext) {
-      setFeedback(`Good job! Move: ${userMove}`)
-      setWrongMove(false)
-      setLastFen(game.fen())
-      setBoardPosition(game.fen())
-      setCurrentIndex(currentIndex + 1)
+      setFeedback(`Good job! Move: ${userMove}`);
+      setWrongMove(false);
+      setLastFen(game.fen());
+      setBoardPosition(game.fen());
+      setCurrentIndex(currentIndex + 1);
     } else {
-      setAction("snapback")
-      setFeedback("Wrong move!")
-      setWrongMove(true)
+      setAction("snapback");
+      setFeedback("Wrong move!");
+      setWrongMove(true);
     }
-  }
+  };
 
   // Reset to last correct position
   const handleResetToLastPosition = () => {
-    game.load(lastFen)
-    setBoardPosition(lastFen)
-    setFeedback("Reset to last correct move.")
-    setWrongMove(false)
-  }
+    game.load(lastFen);
+    setBoardPosition(lastFen);
+    setFeedback("Reset to last correct move.");
+    setWrongMove(false);
+  };
 
   // Reset board entirely
   const handleResetBoard = () => {
     if (currentMoves.length > 0) {
-      // We are in practice mode => reset same variation
-      game.reset()
-      setBoardPosition("start")
-      setLastFen("start")
-      setWrongMove(false)
-      setCurrentIndex(0)
-      setFeedback("Board reset for this opening. Move #1.")
+      game.reset();
+      setBoardPosition("start");
+      setLastFen("start");
+      setWrongMove(false);
+      setCurrentIndex(0);
+      setFeedback("Board reset for this opening. Move #1.");
     } else {
-      // Free-play => just reset
-      game.reset()
-      setBoardPosition("start")
-      setFeedback("Board reset in free-play mode.")
+      game.reset();
+      setBoardPosition("start");
+      setFeedback("Board reset in free-play mode.");
     }
-  }
+  };
 
   // Enter freeplay mode
   const enterFreeplayMode = () => {
-    setFeedback("Switched to freeplay mode.")
-    setCurrentOpeningId(null)
-    setCurrentVariationName(null)
-    setSelectedOpening(null)
-    setCurrentMoves([])
-    setCurrentIndex(0)
-    setWrongMove(false)
-    setLastFen("start")
+    setFeedback("Switched to freeplay mode.");
+    setCurrentOpeningId(null);
+    setCurrentVariationName(null);
+    setSelectedOpening(null);
+    setCurrentMoves([]);
+    setCurrentIndex(0);
+    setWrongMove(false);
+    setLastFen("start");
 
-    game.reset()
-    setBoardPosition("start")
-  }
-
-  // Next move
-  const handleNextMove = () => {
-    if (!currentMoves.length) return
-    if (currentIndex < currentMoves.length) {
-      const move = currentMoves[currentIndex]
-      game.move(move)
-      setBoardPosition(game.fen())
-      setCurrentIndex(currentIndex + 1)
-      setFeedback(`Forward move: ${move}`)
-      setWrongMove(false)
-      setLastFen(game.fen())
-    } else {
-      setFeedback("End of variation!")
-    }
-  }
-
-  // Previous move
-  const handlePrevMove = () => {
-    if (!currentMoves.length) return
-    if (currentIndex <= 0) {
-      setFeedback("Already at the start!")
-      return
-    }
-    game.undo()
-    setBoardPosition(game.fen())
-    setCurrentIndex(currentIndex - 1)
-    setFeedback("Stepped back one move.")
-    setWrongMove(false)
-    setLastFen(game.fen())
-  }
+    game.reset();
+    setBoardPosition("start");
+  };
 
   // Random variation
   const handleRandomVariation = async () => {
-    setFeedback("Loading random variation...")
+    setFeedback("Loading random variation...");
     try {
-      const resp = await fetch("/api/practice/random")
+      const resp = await fetch(`${API_BASE_URL}/api/practice/random`);
       if (!resp.ok) {
-        setFeedback("No openings found or error.")
-        return
+        setFeedback("No openings found or error.");
+        return;
       }
-      const data = await resp.json()
-      setFeedback(`Opening: ${data.openingId}, Variation: ${data.variationName}`)
-      startVariationPractice(data.openingId, data.variationName)
+      const data = await resp.json();
+      setFeedback(`Opening: ${data.openingId}, Variation: ${data.variationName}`);
+      startVariationPractice(data.openingId, data.variationName);
     } catch (error) {
-      console.error(error)
-      setFeedback("Error fetching random variation.")
+      console.error("Error fetching random variation:", error);
+      setFeedback("Error fetching random variation.");
     }
-  }
+  };
 
   // Toggle fullscreen
   const toggleFullscreen = () => {
-    setIsFullscreen(!isFullscreen)
-  }
+    setIsFullscreen(!isFullscreen);
+  };
 
   return (
     <div className="h-screen flex flex-col overflow-hidden bg-gray-100 dark:bg-gray-900 transition-colors duration-300">

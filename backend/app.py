@@ -10,13 +10,16 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app)  # Enable CORS for local dev
+
+# Dynamically configure CORS to allow your frontend URL
+CORS(app, origins=["https://<WestonVoglesonger>.github.io/ChessWiz"])
 
 OPENINGS_FILE = "openings.json"
 PROGRESS_FILE = "progress.json"
 
 openings_data = []
 user_progress = {}
+
 
 def load_openings():
     global openings_data
@@ -28,6 +31,7 @@ def load_openings():
         data = json.load(f)
         openings_data = data.get("Openings", [])
 
+
 def load_progress():
     global user_progress
     if not os.path.exists(PROGRESS_FILE):
@@ -38,23 +42,16 @@ def load_progress():
         data = json.load(f)
         user_progress = data.get("Progress", {})
 
+
 def save_progress():
     with open(PROGRESS_FILE, "w", encoding="utf-8") as f:
         json.dump({"Progress": user_progress}, f, indent=2)
 
+
 @app.route("/api/openings", methods=["GET"])
 def get_openings():
     """
-    Returns a list of all openings with basic info:
-    [
-      {
-        "id": 1,
-        "openingName": "Sicilian Defense",
-        "ecoCode": "B20",
-        "variations": ["Najdorf Variation", "Dragon Variation", ...]
-      },
-      ...
-    ]
+    Returns a list of all openings with basic info.
     """
     result = []
     for o in openings_data:
@@ -66,6 +63,7 @@ def get_openings():
             "variations": var_names
         })
     return jsonify(result), 200
+
 
 @app.route("/api/openings/<int:opening_id>/<variation_name>", methods=["GET"])
 def get_variation_moves(opening_id, variation_name):
@@ -79,28 +77,23 @@ def get_variation_moves(opening_id, variation_name):
                     return jsonify(v["moves"]), 200
     return jsonify({"error": "Variation not found"}), 404
 
+
 @app.route("/api/openings/<int:opening_id>", methods=["GET"])
 def get_opening_detail(opening_id):
     """
-    Returns the *full* details for one specific opening, including:
-    description, strategicIdeas, famousGames, and all variations
-    with their sub-fields.
+    Returns the full details for a specific opening, including
+    description, strategicIdeas, famousGames, and variations.
     """
     for o in openings_data:
         if o["id"] == opening_id:
             return jsonify(o), 200
     return jsonify({"error": "Opening not found"}), 404
 
+
 @app.route("/api/practice/random", methods=["GET"])
 def get_random_opening():
     """
-    Returns a random opening/variation from the entire list.
-    Example response:
-    {
-      "openingId": 1,
-      "variationName": "Najdorf Variation",
-      "moves": [...]
-    }
+    Returns a random opening/variation from the list.
     """
     if not openings_data:
         return jsonify({"error": "No openings available"}), 404
@@ -117,7 +110,7 @@ def get_random_opening():
 @app.route("/api/practice/checkMove", methods=["POST"])
 def check_move():
     """
-    Checks if the user's move is correct or not, partial resets on fail.
+    Checks if the user's move is correct.
     """
     data = request.get_json()
     opening_id = data.get("openingId")
@@ -156,26 +149,31 @@ def check_move():
             "nextIndex": reset_index
         }), 200
 
+
 def update_progress(opening_id, variation_name, new_index, old_index, success=True):
     key = f"{opening_id}-{variation_name}"
     if key not in user_progress:
-        user_progress[key] = { "moveIndex": 0, "failures": {} }
+        user_progress[key] = {"moveIndex": 0, "failures": {}}
 
     if success:
         if new_index > user_progress[key]["moveIndex"]:
             user_progress[key]["moveIndex"] = new_index
     else:
-        fails = user_progress[key]["failures"]
-        fails[str(old_index)] = fails.get(str(old_index), 0) + 1
+        failures = user_progress[key]["failures"]
+        failures[str(old_index)] = failures.get(str(old_index), 0) + 1
 
     save_progress()
 
+
 @app.route("/")
 def index():
-    # Serve the main frontend page if needed
+    """
+    Serve the frontend page if needed (for local dev).
+    """
     return app.send_static_file("index.html")
+
 
 if __name__ == "__main__":
     load_openings()
     load_progress()
-    app.run(host="0.0.0.0", port=1600, debug=True)
+    app.run(host="0.0.0.0", port=int(os.getenv("PORT", 1600)), debug=False)
